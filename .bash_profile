@@ -27,11 +27,6 @@ export PATH="~/Library/Python/3.6/bin:$PATH:/anaconda/bin:/Applications/Visual S
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
-export NVM_DIR="$HOME/.nvm"
-export NODE_PATH="$NVM_DIR/versions/node/v8.9.3/lib/node_modules"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 source ~/git-completion.bash
 
 # aws command
@@ -39,3 +34,6 @@ alias s3="aws s3"
 
 # added by Anaconda3 5.1.0 installer
 export PATH="/anaconda3/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
